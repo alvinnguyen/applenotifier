@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource("stores","StoreController");
+Route::resource("products","ProductController");
+Route::resource("inventories","InventoryController");
+Route::resource("topics","TopicController");
+Route::resource("subscriptions","SubscriptionController");
+Route::resource("subscribers","SubscriberController");
